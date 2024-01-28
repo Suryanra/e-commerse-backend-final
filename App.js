@@ -9,8 +9,8 @@ const Login = require('./routes/Login')
 const Auth = require('./routes/Auth')
 const Edit = require('./routes/Edit')
 // const signup=require('./routes/Signup')
-// app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+// app.use(cors({ origin: '*', credentials: true }));
 
 app.use(cookieParser());
 app.use(express.json());
@@ -32,7 +32,7 @@ app.get('/trial',async(req,resp)=>{
       const data=await model.find({});
       console.log(data);
       // const newdata=data.json();
-      resp.send({'message':"changed again"});
+      resp.send({'message':"changed again again"});
       // resp.send(data);
 })
 
