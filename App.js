@@ -32,7 +32,7 @@ app.get('/trial',async(req,resp)=>{
       const data=await model.find({});
       console.log(data);
       // const newdata=data.json();
-      resp.send({'message':"changed"});
+      resp.send({'message':"changed again"});
       // resp.send(data);
 })
 
